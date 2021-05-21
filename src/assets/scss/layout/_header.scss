@@ -78,7 +78,11 @@
     border-top-width: _size(border-width);
     border-bottom-width: _size(border-width);
     max-width: 100%;
-
+    
+    h1{
+      color: black;
+      text-shadow: 1px 1px gold;
+    }
     .inner {
       @include vendor(
         'transition',

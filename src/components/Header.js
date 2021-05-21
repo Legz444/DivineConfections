@@ -9,7 +9,7 @@ const Header = props => (
       <div className="inner">
         <h1>Divine Confections</h1>
         <p>
-          Custom Cakes for the conscious consumer. Always Gluten Free, always Organic. Forever made with love.
+          Custom Cakes for the conscious consumer. <br></br>Always Gluten Free, always Organic.<br></br> Forever made with love.
         </p>
       </div>
     </div>
@@ -21,7 +21,7 @@ const Header = props => (
               props.onOpenArticle('intro')
             }}
           >
-            Intro
+            Menu
           </button>
         </li>
         <li>
@@ -30,7 +30,7 @@ const Header = props => (
               props.onOpenArticle('work')
             }}
           >
-            Work
+            Gallery
           </button>
         </li>
         <li>
