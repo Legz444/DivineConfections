@@ -46,6 +46,7 @@ const Layout = ({ children, location }) => {
             ]}
           >
             <html lang="en" />
+            <title>Divine Confections</title>
           </Helmet>
           {content}
         </>

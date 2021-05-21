@@ -63,17 +63,13 @@
   }
 
   .logo {
-    width: 5.5rem;
-    height: 5.5rem;
-    line-height: 5.5rem;
+    background-image: url("https://res.cloudinary.com/legz444/image/upload/v1613009387/conscious_confections_eom6qk.png");
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    line-height: 8.5rem;
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
-
-    .icon {
-      &:before {
-        font-size: 2rem;
-      }
-    }
   }
 
   .content {
