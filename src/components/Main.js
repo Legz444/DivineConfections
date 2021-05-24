@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import portrait from '../images/portrait.jpg';
 
 class Main extends React.Component {
   render() {
@@ -93,17 +93,31 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={portrait} alt="" />
           </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+          <p>I remember being a small child and my father taking me to the
+						grocery store. We would walk by the cake section and I would slow
+						down and get on my tip toes to see if there was a lady decorating a
+						cake behind the counter of sweets. He would eventually leave me
+						there to watch as she piped colorful edges around a birthday cake.
+						<br />
+						<br />
+						Then in high school I was blessed to learn from an amazing cake
+						decorator who generously taught me her trade. I worked with her for
+						4 years and then went on to other things. I have always loved
+						creation and my freedom of expression, I am now choosing the
+						sweet life, diving into my creation of Divine Confections.
+						<br />
+						<br />
+						My vision:
+						<br />
+						<br />
+						Eloquently and artistically designed special occasion cakes.
+						Everything is Gluten free, options for Paleo, dairy free,  vegan,
+						natural dies and made with the love and fire that drives me. I value
+						organic, quality ingredients that satisfies the need for a
+						delectable treat that doesn't compromise one's health.
+            </p>
           {close}
         </article>
 
@@ -139,29 +153,13 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li>
-              <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
+              <a href="https://www.facebook.com/confectionsdivine" className="icon fa-facebook">
                 <span className="label">Facebook</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
+              <a href="https://www.instagram.com/divineconfections/" className="icon fa-instagram">
                 <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
               </a>
             </li>
           </ul>

@@ -80,8 +80,7 @@
     max-width: 100%;
     
     h1{
-      color: black;
-      text-shadow: 1px 1px gold;
+      text-shadow: 2px 2px black;
     }
     .inner {
       @include vendor(
@@ -138,7 +137,8 @@
           font-size: 0.8rem;
           font-family: _font(family);
           border: none;
-          box-shadow: none;
+          box-shadow: none;  
+          text-shadow: 2px 2px black;
 
           &:hover,
           &:focus {
