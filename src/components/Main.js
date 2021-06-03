@@ -3,6 +3,7 @@ import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import portrait from '../images/portrait.jpg';
+import {Card, Accordion, Button} from 'react-bootstrap';
 
 class Main extends React.Component {
   render() {
@@ -32,26 +33,158 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
-          <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
+          <Accordion>
+            <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                  Size
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="0">
+                <Card.Body>
+                      <Card>
+                        <Card.Title>4 In Round, 2 Layer</Card.Title>
+                          <Card.Subtitle>$25</Card.Subtitle>
+                        <Card.Text>Feeds 4-6 people, perfect for Families.</Card.Text>
+                      </Card>
+                      <Card>
+                        <Card.Title>4 In Round, 3 Layer</Card.Title>
+                          <Card.Subtitle>$35</Card.Subtitle>
+                        <Card.Text>Feeds 5-10 people, tall and skinny.</Card.Text>
+                      </Card>
+                      <Card>
+                        <Card.Title>6 In Round, 2 Layer</Card.Title>
+                          <Card.Subtitle>$45</Card.Subtitle>
+                        <Card.Text>Feeds 8-12 people.</Card.Text>
+                      </Card>
+                      <Card>
+                      <Card.Title>8 In Round, 2 Layer</Card.Title>
+                        <Card.Subtitle>$75</Card.Subtitle>
+                      <Card.Text>Feeds 12-15 people.</Card.Text>
+                      </Card>
+                      <Card>
+                      <Card.Title>1/2 Dozen Cupcakes</Card.Title>
+                        <Card.Subtitle>$15</Card.Subtitle>
+                      <Card.Text>Feeds 6 people.</Card.Text>
+                      </Card>
+                      <Card>
+                      <Card.Title>Dozen Cupcakes
+                      </Card.Title>
+                        <Card.Subtitle>$30</Card.Subtitle>
+                      <Card.Text>Feeds 12 people.</Card.Text>
+                      </Card>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                  Flavor
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body>
+                  <Card>
+                    <Card.Img></Card.Img>
+                    <Card.Title>Vanilla</Card.Title>
+                    <Card.Text>Classic, light and fluffy organic Vanilla Cake. Vegan options available. Coconut or Almond Milk Only</Card.Text>
+                    <Card.Footer>Insert GF, Org, Veg Icons</Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img></Card.Img>
+                    <Card.Title>Chocolate</Card.Title>
+                    <Card.Text>Classic, fluffy chocolate cake. Vegan options available. Coconut or Almond Milk Only</Card.Text>
+                    <Card.Footer>Insert GF, Org, Veg Icons</Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img></Card.Img>
+                    <Card.Title>Paleo Chocolate</Card.Title>
+                    <Card.Subtitle>Additional $5</Card.Subtitle>
+                    <Card.Text>Dense and Fudgy Chocolate cake made with Nut flours and Coconut milk.</Card.Text>
+                    <Card.Footer>Insert GF, Org</Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img></Card.Img>
+                    <Card.Title>Red Velvet</Card.Title>
+                    <Card.Text>Romantic Red Chocolate Cake made with the traditional Organic Cows Milk or Coconut Milk.</Card.Text>
+                    <Card.Footer>Insert GF, Org</Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img></Card.Img>
+                    <Card.Title>Vegan Carrot Cake</Card.Title>
+                    <Card.Subtitle>Additional $5</Card.Subtitle>
+                    <Card.Text>Made with Love Carrot Cake, great for summer parties or a special Vegan option</Card.Text>
+                    <Card.Footer>Insert GF, Org, Veg Icons</Card.Footer>
+                  </Card>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="2">
+                  Frosting
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="2">
+                <Card.Body>
+                <Card>
+                    <Card.Img></Card.Img>
+                    <Card.Title>Classic Buttercream Frosting</Card.Title>
+                    <Card.Text>Creamy buttery Coconut or Almond Milk Frosting. Our most popular frosting choice as it is best for fine and detailed decorating.</Card.Text>
+                    <Card.Footer>Insert GF, Org</Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img></Card.Img>
+                    <Card.Title>Vegan Cream Cheese Frosting</Card.Title>
+                    <Card.Subtitle>Additional $3, $5, $8</Card.Subtitle>
+                    <Card.Text>Classic Cream Cheese frosting made with Vegan Cream Cheese. Not a good choice for very detailed decorations.</Card.Text>
+                    <Card.Footer>Insert GF, Org, Vegan</Card.Footer>
+                  </Card>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="3">
+                  Theme and Decor
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="3">
+                <Card.Body>
+                  <Card>
+                    <Card.Title>Basic Decorations</Card.Title>
+                    <Card.Text>Choose your color theme, buttercream roses, balloons, Happy Birthday flag or name written on cake, or other easy themes.</Card.Text>
+                  </Card>
+                  <Card>
+                    <Card.Title>Sugar Paste Flowers</Card.Title>
+                    <Card.Subtitle>Additional $2 per flower</Card.Subtitle>
+                    <Card.Text>Hand sculpted Flowers of your choosing: Roses, Lillies, Orchids</Card.Text>
+                  </Card>
+                  <Card>
+                    <Card.Title>ButterCream Transfer</Card.Title>
+                    <Card.Subtitle>Additional $3</Card.Subtitle>
+                    <Card.Text>Take any logo, or simple picture and transfer it to the top of the cake using buttercream frosting only.</Card.Text>
+                  </Card>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="4">
+                  Natural Dyes and Other Add-ons
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="4">
+                <Card.Body>
+                <Card>
+                    <Card.Title>Natural Dye</Card.Title>
+                    <Card.Subtitle>Additional $5</Card.Subtitle>
+                    <Card.Text>Natural dyes may appear lighter in color and have a subtle flavor depending on the color.</Card.Text>
+                </Card>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+          </Accordion>
           {close}
         </article>
 
