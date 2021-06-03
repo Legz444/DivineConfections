@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import portrait from '../images/portrait.jpg';
-import {Card, Accordion, Button} from 'react-bootstrap';
+import {Card, Accordion, Button, Carousel} from 'react-bootstrap';
 
 class Main extends React.Component {
   render() {
@@ -31,10 +30,10 @@ class Main extends React.Component {
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src="https://res.cloudinary.com/legz444/image/upload/v1613009387/conscious_confections_eom6qk.png" alt="" />
           </span>
           <Accordion>
-            <Card>
+            <Card bg="dark" variant="white">
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
                   Size
@@ -42,32 +41,32 @@ class Main extends React.Component {
               </Card.Header>
               <Accordion.Collapse eventKey="0">
                 <Card.Body>
-                      <Card>
+                      <Card bg="dark" bg="dark">
                         <Card.Title>4 In Round, 2 Layer</Card.Title>
                           <Card.Subtitle>$25</Card.Subtitle>
                         <Card.Text>Feeds 4-6 people, perfect for Families.</Card.Text>
                       </Card>
-                      <Card>
+                      <Card bg="dark" bg="dark">
                         <Card.Title>4 In Round, 3 Layer</Card.Title>
                           <Card.Subtitle>$35</Card.Subtitle>
                         <Card.Text>Feeds 5-10 people, tall and skinny.</Card.Text>
                       </Card>
-                      <Card>
+                      <Card bg="dark" bg="dark">
                         <Card.Title>6 In Round, 2 Layer</Card.Title>
                           <Card.Subtitle>$45</Card.Subtitle>
                         <Card.Text>Feeds 8-12 people.</Card.Text>
                       </Card>
-                      <Card>
+                      <Card bg="dark" bg="dark">
                       <Card.Title>8 In Round, 2 Layer</Card.Title>
                         <Card.Subtitle>$75</Card.Subtitle>
                       <Card.Text>Feeds 12-15 people.</Card.Text>
                       </Card>
-                      <Card>
+                      <Card bg="dark" bg="dark">
                       <Card.Title>1/2 Dozen Cupcakes</Card.Title>
                         <Card.Subtitle>$15</Card.Subtitle>
                       <Card.Text>Feeds 6 people.</Card.Text>
                       </Card>
-                      <Card>
+                      <Card bg="dark" bg="dark">
                       <Card.Title>Dozen Cupcakes
                       </Card.Title>
                         <Card.Subtitle>$30</Card.Subtitle>
@@ -76,7 +75,8 @@ class Main extends React.Component {
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <Card>
+            <hr></hr>
+            <Card bg="dark" bg="dark">
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
                   Flavor
@@ -84,32 +84,32 @@ class Main extends React.Component {
               </Card.Header>
               <Accordion.Collapse eventKey="1">
                 <Card.Body>
-                  <Card>
+                  <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Vanilla</Card.Title>
                     <Card.Text>Classic, light and fluffy organic Vanilla Cake. Vegan options available. Coconut or Almond Milk Only</Card.Text>
                     <Card.Footer>Insert GF, Org, Veg Icons</Card.Footer>
                   </Card>
-                  <Card>
+                  <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Chocolate</Card.Title>
                     <Card.Text>Classic, fluffy chocolate cake. Vegan options available. Coconut or Almond Milk Only</Card.Text>
                     <Card.Footer>Insert GF, Org, Veg Icons</Card.Footer>
                   </Card>
-                  <Card>
+                  <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Paleo Chocolate</Card.Title>
                     <Card.Subtitle>Additional $5</Card.Subtitle>
                     <Card.Text>Dense and Fudgy Chocolate cake made with Nut flours and Coconut milk.</Card.Text>
                     <Card.Footer>Insert GF, Org</Card.Footer>
                   </Card>
-                  <Card>
+                  <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Red Velvet</Card.Title>
                     <Card.Text>Romantic Red Chocolate Cake made with the traditional Organic Cows Milk or Coconut Milk.</Card.Text>
                     <Card.Footer>Insert GF, Org</Card.Footer>
                   </Card>
-                  <Card>
+                  <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Vegan Carrot Cake</Card.Title>
                     <Card.Subtitle>Additional $5</Card.Subtitle>
@@ -119,7 +119,8 @@ class Main extends React.Component {
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <Card>
+            <hr></hr>
+            <Card bg="dark" bg="dark">
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
                   Frosting
@@ -127,13 +128,13 @@ class Main extends React.Component {
               </Card.Header>
               <Accordion.Collapse eventKey="2">
                 <Card.Body>
-                <Card>
+                <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Classic Buttercream Frosting</Card.Title>
                     <Card.Text>Creamy buttery Coconut or Almond Milk Frosting. Our most popular frosting choice as it is best for fine and detailed decorating.</Card.Text>
                     <Card.Footer>Insert GF, Org</Card.Footer>
                   </Card>
-                  <Card>
+                  <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Vegan Cream Cheese Frosting</Card.Title>
                     <Card.Subtitle>Additional $3, $5, $8</Card.Subtitle>
@@ -143,7 +144,8 @@ class Main extends React.Component {
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <Card>
+            <hr></hr>
+            <Card bg="dark" bg="dark">
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="3">
                   Theme and Decor
@@ -151,24 +153,25 @@ class Main extends React.Component {
               </Card.Header>
               <Accordion.Collapse eventKey="3">
                 <Card.Body>
-                  <Card>
+                  <Card bg="dark" bg="dark">
                     <Card.Title>Basic Decorations</Card.Title>
                     <Card.Text>Choose your color theme, buttercream roses, balloons, Happy Birthday flag or name written on cake, or other easy themes.</Card.Text>
                   </Card>
-                  <Card>
+                  <Card bg="dark" bg="dark">
                     <Card.Title>Sugar Paste Flowers</Card.Title>
                     <Card.Subtitle>Additional $2 per flower</Card.Subtitle>
-                    <Card.Text>Hand sculpted Flowers of your choosing: Roses, Lillies, Orchids</Card.Text>
+                    <Card.Text>Hand sculpted Flowers of your choosing: Roses, Peony, Lillies, Orchids</Card.Text>
                   </Card>
-                  <Card>
+                  <Card bg="dark" bg="dark">
                     <Card.Title>ButterCream Transfer</Card.Title>
                     <Card.Subtitle>Additional $3</Card.Subtitle>
                     <Card.Text>Take any logo, or simple picture and transfer it to the top of the cake using buttercream frosting only.</Card.Text>
                   </Card>
                 </Card.Body>
               </Accordion.Collapse>
-            </Card>
-            <Card>
+            </Card >
+            <hr></hr>
+            <Card bg="dark" bg="dark">
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="4">
                   Natural Dyes and Other Add-ons
@@ -176,7 +179,7 @@ class Main extends React.Component {
               </Card.Header>
               <Accordion.Collapse eventKey="4">
                 <Card.Body>
-                <Card>
+                <Card bg="dark" bg="dark">
                     <Card.Title>Natural Dye</Card.Title>
                     <Card.Subtitle>Additional $5</Card.Subtitle>
                     <Card.Text>Natural dyes may appear lighter in color and have a subtle flavor depending on the color.</Card.Text>
@@ -195,25 +198,161 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          <h2 className="major">Gallery</h2>
+            <Carousel fade>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613519770/Divine%20Confections/Peonycake_javnq5.jpg"
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                  <h3>Buttercream frosting and Sugar Paste Peonies, 8 inch Round</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259360/Divine%20Confections/fairy_garden_gn8sev.jpg"
+                  alt="Second slide"
+                />
+                <Carousel.Caption>
+                  <h3>Fairy Garden with Natural Dyes, 8 inch Round</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259358/Divine%20Confections/Diana_ljmk1r.jpg"
+                  alt="Third slide"
+                />
+                <Carousel.Caption>
+                  <h3>Buttercream, Sugar paste flowers, 4inch Round 3 Layer</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259366/Divine%20Confections/fondant_animals_nbdwnx.jpg"
+                  alt="Fourth slide"
+                />
+                <Carousel.Caption>
+                  <h3>Fondant Animals and Decor, 8 inch round 3 layer</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259368/Divine%20Confections/mushrooms_lyotb4.jpg"
+                  alt="Fifth slide"
+                />
+                <Carousel.Caption>
+                  <h3>Mad Hatter Mushroom CupCakes</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259376/Divine%20Confections/spinkles_tycrr7.jpg"
+                  alt="Sixth slide"
+                />
+                <Carousel.Caption>
+                  <h3>Vegan Cream Cheese Frosting, 6 inch Round</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259377/Divine%20Confections/mothers_cupcake_jjb8ly.jpg"
+                  alt="Seventh slide"
+                />
+                <Carousel.Caption>
+                  <h3>Mother's Day Floral bouqet Cupcakes</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613520549/Divine%20Confections/IMG-20200806-WA0000_1_cbh1vj.jpg"
+                  alt="Eight slide"
+                />
+                <Carousel.Caption>
+                  <h3>Mud covered Dirtbike buttercream transfer</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259382/Divine%20Confections/fruit_tzvayh.jpg"
+                  alt="Nineth slide"
+                />
+                <Carousel.Caption>
+                  <h3>Fruit Topping</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259358/Divine%20Confections/bunny_cake_pj57mn.jpg"
+                  alt="Tenth slide"
+                />
+                <Carousel.Caption>
+                  <h3>Fondant Bunny Theme (Most Furry Friends Available)</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259372/Divine%20Confections/painted_mountains_g7b9ad.jpg"
+                  alt="Eleventh slide"
+                />
+                <Carousel.Caption>
+                  <h3>Hand Painted Mountains, cake crumble top</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259372/Divine%20Confections/Unicorn_cupcake_jqaohl.jpg"
+                  alt="Twelveth slide"
+                />
+                <Carousel.Caption>
+                  <h3>Unicorn Cupcakes</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259369/Divine%20Confections/fondant_v3vxhu.jpg"
+                  alt="Thirteenth slide"
+                />
+                <Carousel.Caption>
+                  <h3>Custom Theme, Fondant Topping</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1613259383/Divine%20Confections/gamer_transfer_gkwjpr.jpg"
+                  alt="Fourteenth slide"
+                />
+                <Carousel.Caption>
+                  <h3>Gamer Theme, Fondant Decor and Buttercream Transfer</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://res.cloudinary.com/legz444/image/upload/v1622698591/Divine%20Confections/mermaid_kbh5k1.jpg"
+                  alt="Fifteenth slide"
+                />
+                <Carousel.Caption>
+                  <h3>Mermaid Cake with Chocolate Molds</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+            
+            
           {close}
         </article>
 
