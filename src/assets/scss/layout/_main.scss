@@ -108,4 +108,46 @@
 				@include padding(2rem, 1.5rem, (1rem, 0, 0.5rem, 0));
 			}
 		}
+		.icon-attribute{
+			color: white;
+			font-size: xx-small;
+			visibility: hidden;
+		}
+		
+		.allergens{
+			display: flex;
+			padding: 5px 5px 10px 0px;
+		}
+		.org{
+			background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623182731/GF_hkfmat.png");
+			width: 35px;
+			height: 35px;
+			background-size: cover;
+			margin-right: 5px;
+		}
+		.gf{
+			background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623180813/3_k8nx9y.png");
+			width: 35px;
+			height: 35px;
+			background-size: cover;
+			margin-right: 5px;
+		}
+		.vegan{
+			background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623180813/2_qrwdko.png");
+			width: 35px;
+			height: 35px;
+			background-size: cover;
+			margin-right: 5px;
+		}
+		.df{
+			background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623180813/4_rujn5e.png");
+			width: 35px;
+			height: 35px;
+			background-size: cover;
+			margin-right: 5px;
+		}
+
+		.about-me{
+			text-align: center;
+		}
 	}

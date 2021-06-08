@@ -4,6 +4,7 @@ import pic02 from '../images/pic02.jpg'
 import portrait from '../images/portrait.jpg';
 import {Card, Accordion, Button, Carousel} from 'react-bootstrap';
 
+
 class Main extends React.Component {
   render() {
     let close = (
@@ -28,9 +29,9 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">Menu</h2>
           <span className="image main">
-            <img src="https://res.cloudinary.com/legz444/image/upload/v1613009387/conscious_confections_eom6qk.png" alt="" />
+            <img src="https://res.cloudinary.com/legz444/image/upload/v1613009387/conscious_confections_eom6qk.png" alt="Divine Confections Logo" />
           </span>
           <Accordion>
             <Card bg="dark" variant="white">
@@ -42,32 +43,32 @@ class Main extends React.Component {
               <Accordion.Collapse eventKey="0">
                 <Card.Body>
                       <Card bg="dark" bg="dark">
-                        <Card.Title>4 In Round, 2 Layer</Card.Title>
+                        <Card.Title className="pb-2">4 In Round, 2 Layer</Card.Title>
                           <Card.Subtitle>$25</Card.Subtitle>
                         <Card.Text>Feeds 4-6 people, perfect for Families.</Card.Text>
                       </Card>
                       <Card bg="dark" bg="dark">
-                        <Card.Title>4 In Round, 3 Layer</Card.Title>
+                        <Card.Title className="pb-2 pt-3">4 In Round, 3 Layer</Card.Title>
                           <Card.Subtitle>$35</Card.Subtitle>
                         <Card.Text>Feeds 5-10 people, tall and skinny.</Card.Text>
                       </Card>
                       <Card bg="dark" bg="dark">
-                        <Card.Title>6 In Round, 2 Layer</Card.Title>
+                        <Card.Title className="pb-2 pt-3">6 In Round, 2 Layer</Card.Title>
                           <Card.Subtitle>$45</Card.Subtitle>
                         <Card.Text>Feeds 8-12 people.</Card.Text>
                       </Card>
                       <Card bg="dark" bg="dark">
-                      <Card.Title>8 In Round, 2 Layer</Card.Title>
+                      <Card.Title className="pb-2 pt-3">8 In Round, 2 Layer</Card.Title>
                         <Card.Subtitle>$75</Card.Subtitle>
                       <Card.Text>Feeds 12-15 people.</Card.Text>
                       </Card>
                       <Card bg="dark" bg="dark">
-                      <Card.Title>1/2 Dozen Cupcakes</Card.Title>
+                      <Card.Title className="pb-2 pt-3">1/2 Dozen Cupcakes</Card.Title>
                         <Card.Subtitle>$15</Card.Subtitle>
                       <Card.Text>Feeds 6 people.</Card.Text>
                       </Card>
                       <Card bg="dark" bg="dark">
-                      <Card.Title>Dozen Cupcakes
+                      <Card.Title className="pb-2 pt-3">Dozen Cupcakes
                       </Card.Title>
                         <Card.Subtitle>$30</Card.Subtitle>
                       <Card.Text>Feeds 12 people.</Card.Text>
@@ -87,34 +88,62 @@ class Main extends React.Component {
                   <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Vanilla</Card.Title>
-                    <Card.Text>Classic, light and fluffy organic Vanilla Cake. Vegan options available. Coconut or Almond Milk Only</Card.Text>
-                    <Card.Footer>Insert GF, Org, Veg Icons</Card.Footer>
+                    <Card.Text>Classic, light and fluffy organic Vanilla Cake. Vegan options available. Coconut or Almond Milk Only<br></br>
+                      <div className="allergens">
+                        <div className="org"></div>
+                        <div className="gf"></div>
+                        <div className="vegan"></div>
+                        <div className="df"></div>
+                      </div>
+                      </Card.Text>
                   </Card>
                   <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Chocolate</Card.Title>
-                    <Card.Text>Classic, fluffy chocolate cake. Vegan options available. Coconut or Almond Milk Only</Card.Text>
-                    <Card.Footer>Insert GF, Org, Veg Icons</Card.Footer>
+                    <Card.Text>Classic, fluffy chocolate cake. Vegan options available. Coconut or Almond Milk Only<br></br>
+                      <div className="allergens"> 
+                        <div className="org"></div>
+                        <div className="gf"></div>
+                        <div className="vegan"></div>
+                        <div className="df"></div>
+                      </div> 
+                    </Card.Text>
                   </Card>
                   <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Paleo Chocolate</Card.Title>
                     <Card.Subtitle>Additional $5</Card.Subtitle>
-                    <Card.Text>Dense and Fudgy Chocolate cake made with Nut flours and Coconut milk.</Card.Text>
-                    <Card.Footer>Insert GF, Org</Card.Footer>
+                    <Card.Text>Dense and Fudgy Chocolate cake made with Nut flours and Coconut milk.<br></br>
+                    <div className="allergens">
+                      <div className="org"></div>
+                      <div className="gf"></div>
+                      <div className="vegan"></div>
+                      <div className="df"></div>
+                    </div>
+                    </Card.Text>
                   </Card>
                   <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Red Velvet</Card.Title>
-                    <Card.Text>Romantic Red Chocolate Cake made with the traditional Organic Cows Milk or Coconut Milk.</Card.Text>
-                    <Card.Footer>Insert GF, Org</Card.Footer>
+                    <Card.Text>Romantic Red Chocolate Cake made with the traditional Organic Cows Milk or Coconut Milk.<br></br>
+                    <div className="allergens">
+                      <div className="org"></div>
+                      <div className="gf"></div>
+                    </div>
+                    </Card.Text>
                   </Card>
                   <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Vegan Carrot Cake</Card.Title>
                     <Card.Subtitle>Additional $5</Card.Subtitle>
-                    <Card.Text>Made with Love Carrot Cake, great for summer parties or a special Vegan option</Card.Text>
-                    <Card.Footer>Insert GF, Org, Veg Icons</Card.Footer>
+                    <Card.Text>Made with Love Carrot Cake, great for summer parties or a special Vegan option.<br></br>
+                    <div className="allergens">
+                      <div className="org"></div>
+                      <div className="gf"></div>
+                      <div className="vegan"></div>
+                      <div className="df"></div>
+                    </div>
+                    </Card.Text>
                   </Card>
                 </Card.Body>
               </Accordion.Collapse>
@@ -131,15 +160,25 @@ class Main extends React.Component {
                 <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Classic Buttercream Frosting</Card.Title>
-                    <Card.Text>Creamy buttery Coconut or Almond Milk Frosting. Our most popular frosting choice as it is best for fine and detailed decorating.</Card.Text>
-                    <Card.Footer>Insert GF, Org</Card.Footer>
+                    <Card.Text>Creamy buttery Coconut or Almond Milk Frosting. Our most popular frosting choice as it is best for fine and detailed decorating.<br></br>
+                    <div className="allergens">
+                      <div className="org"></div>
+                      <div className="gf"></div>
+                      <div className="df"></div>
+                    </div>
+                    </Card.Text>
                   </Card>
                   <Card bg="dark" bg="dark">
                     <Card.Img></Card.Img>
                     <Card.Title>Vegan Cream Cheese Frosting</Card.Title>
                     <Card.Subtitle>Additional $3, $5, $8</Card.Subtitle>
-                    <Card.Text>Classic Cream Cheese frosting made with Vegan Cream Cheese. Not a good choice for very detailed decorations.</Card.Text>
-                    <Card.Footer>Insert GF, Org, Vegan</Card.Footer>
+                    <Card.Text>Classic Cream Cheese frosting made with Vegan Cream Cheese. Not a good choice for very detailed decorations.<br></br>
+                    <div className="allergens">
+                      <div className="org"></div>
+                      <div className="gf"></div>
+                      <div className="vegan"></div>
+                      <div className="df"></div>
+                    </div></Card.Text>
                   </Card>
                 </Card.Body>
               </Accordion.Collapse>
@@ -187,6 +226,7 @@ class Main extends React.Component {
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
+            <div className="icon-attribute">Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div className="icon-attribute">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div className="icon-attribute">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
           </Accordion>
           {close}
         </article>
@@ -367,7 +407,7 @@ class Main extends React.Component {
           <span className="image main">
             <img src={portrait} alt="" />
           </span>
-          <p>I remember being a small child and my father taking me to the
+          <p className="about-me">I remember being a small child and my father taking me to the
 						grocery store. We would walk by the cake section and I would slow
 						down and get on my tip toes to see if there was a lady decorating a
 						cake behind the counter of sweets. He would eventually leave me
@@ -401,18 +441,18 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="POST" action="https://formsubmit.co/a.divineconfections@gmail.com">
             <div className="field half first">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name" required/>
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input type="text" name="email" id="email" required/>
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <textarea name="message" id="message" rows="8" required></textarea>
             </div>
             <ul className="actions">
               <li>
@@ -422,6 +462,7 @@ class Main extends React.Component {
                 <input type="reset" value="Reset" />
               </li>
             </ul>
+            <input type="hidden" name="_next" value="/"></input>
           </form>
           <ul className="icons">
             <li>
