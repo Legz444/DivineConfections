@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{p5nM:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),o=n.n(a),l=n("Wbzz"),r=n("Bl7J");t.default=function(){return o.a.createElement(r.a,null,o.a.createElement("h1",null,"Thank you for Reaching Out!"),o.a.createElement("p",null,"Allegra will be responding shortly. In the meantime, check out the gallery to get some ideas for your next order!"),o.a.createElement(l.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-page-2-js-570fd0bcadbd02bb0ad9.js.map
